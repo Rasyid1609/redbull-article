@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* font dan text styling */
+
+body {
+    background-color: #011A2F;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: Inter;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+header {
+    display: inline;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+  }
+
+main {
+    padding: 2px;
+    overflow: auto;
+    padding-top: 50px;
+}
+
+#head {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E2061F;
+}
+
+.profile header {
+    text-align: center;
+}
+
+
+
+h3 {
+    padding-left: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+section {
+    display: block;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+}
+@media (max-width: 650px)  {
+    .logo > img {
+        margin: 0;
+    }
+}
+
+.logo > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.profile img {
+    width: 200px;
+  }
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  
+  nav {
+    background-color: #003566;
+    padding: 5px;
+    position: sticky;
+    color: whitesmoke;
+    top: 0;
+  }
+
+nav > ul > li:hover {
+    
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+/* engine */
+.specs-filter-column {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.specs-column-item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 282px;
+    height: 104px;
+    justify-content: center;
+    background-color: #011A2F ; /* rgba(255, 255, 255, 0.15) */ 
+    border-radius: 8px;
+}
+
+.specs-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+}
+
+
+.regular {
+    opacity: 0.7;
+    font-family: Inter;
+    color: white;
+    line-height: 23px;
+    letter-spacing: 0;
+    }
+
+
+.specs-container > span {
+    margin: 10px;
+}
+
+.specs-container > span:nth-child(2) {
+    font-size: 36px;
+}
+
+span {
+    font-size: 16px;
+}
+
+.title-bold {
+    font-family: Inter-Bold, Inter;
+    color: white;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+/* */
+
+.cars {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#content {
+    float: left;
+    width: 75%;
+  }
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
